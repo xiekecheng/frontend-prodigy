@@ -2,6 +2,7 @@ import {KnowledgeList} from "@/data/knowledgeData";
 import {getInterview} from "@/lib/utls";
 import {QuestionType} from "@/types/knowledge";
 import {InterviewItem} from "@/components/InterviewItem";
+import {useRouter} from "next/router";
 
 export default function Interview({interviewList}: any) {
 
@@ -12,7 +13,7 @@ export default function Interview({interviewList}: any) {
           {
             interviewList.map((item: QuestionType) => (
               <li key={item._id}>
-                <InterviewItem {...item} />
+                <InterviewItem {...item}/>
               </li>
             ))
           }

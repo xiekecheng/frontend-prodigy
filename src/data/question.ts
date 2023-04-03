@@ -1,3 +1,5 @@
+import {QuestionType} from "@/types/knowledge";
+
 const data= [{
   "_id": "61aa3846d00c060001bf1185",
   "category": "QA",
